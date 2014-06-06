@@ -17,8 +17,8 @@
 	var logFilter = {};
 	var logThisEvent = function (_this, _arguments, initContext) {
 		return (!logFilter.name || matchString(logFilter.name, _arguments[0])) &&
-			     (!logFilter.module || matchString(logFilter.module, initContext)) &&
-			     (!logFilter.constructor || matchConstructor(_this, logFilter.constructor));
+			(!logFilter.module || matchString(logFilter.module, initContext)) &&
+			(!logFilter.constructor || matchConstructor(_this, logFilter.constructor));
 	};
 
 	var loggingOn = false;
