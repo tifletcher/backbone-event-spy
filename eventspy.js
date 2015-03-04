@@ -1,3 +1,7 @@
+// primitive event logging for Backbone and require.js
+// run this after backbone and require are available, but before other modules are loaded
+// at the console say <namespace>.D.logAll() and watch the events flow ...
+
 (function (production, namespace, command) {
 
 	if (production) return;
